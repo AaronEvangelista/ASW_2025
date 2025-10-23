@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Panel de Control</title>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <h1>Panel de Control</h1>
+
+
+    <section>
+        <h2>Preferencias del usuario</h2>
+        <form id="formPreferencias">
+            <label>Nickname: <input type="text" id="nickname"></label><br><br>
+            <label>Color de fondo: <input type="color" id="colorFondo"></label><br><br>
+            <button type="button" id="aplicar">Aplicar</button>
+        </form>
+        <p id="ultimaVisita"></p>
+        <p>Contador de sesión: <span id="contador"></span></p>
+    </section>
+
+    <hr>
+
+
+    <section>
+        <h2>Comunicación entre ventanas</h2>
+        <button id="abrirHijo">Abrir ventana hija</button>
+    </section>
+
+    <hr>
+
+
+    <section>
+        <h2>Interacción con iframe</h2>
+        <iframe id="marco" src="marco_interno.html" width="400" height="200"></iframe><br>
+        <button id="modificarMarco">Modificar título del marco</button>
+    </section>
+</body>
+
+</html>
