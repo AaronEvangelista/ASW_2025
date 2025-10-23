@@ -1,12 +1,12 @@
-console.log("Ejercicio1 :");
-
+console.log("=====================Ejercicio1==========================");
+console.log("muestra los datos del usuario y su longitud");
 let datosUsuario = ["Ilernita", 25, true];
 console.log("Los datos del usuario:", datosUsuario);
 
 console.log("Numero de elementos:", datosUsuario.length);
 
 
-console.log("Ejercicio 2 :");
+console.log("====================Ejercicio 2=========================");
 
 datosUsuario.push("Youtuber");
 console.log("Su profecion es :", datosUsuario[3]);
@@ -21,7 +21,7 @@ datosUsuario.shift();
 console.log("Eliminada su id:", datosUsuario);
 
 
-console.log("Ejercicio 3 :");
+console.log("==================Ejercicio 3============================");
 
 arrayExtra = ["Ilerna", 42, false];
 let arrayTotal = datosUsuario.concat(arrayExtra);
@@ -39,8 +39,7 @@ console.log(numeros);
 arrayTotal.splice(2, 1, "pepe", 29);
 console.log("despues de la modificacion:", arrayTotal);
 
-
-console.log("Ejercicio 4 :");
+console.log("==================Ejercicio 4============================");
 var cadena = "12.45.4";
 
 console.log("12.45.4 esto es un numero:", isNaN(cadena));
@@ -56,3 +55,11 @@ console.log("numero convertido a string:", numeroAString, "Tipo:", typeof numero
 
 let stringANumero = Number("123");
 console.log("String convertido a numero:", stringANumero, "Tipo:", typeof stringANumero);
+
+
+
+
+
+
+
+
