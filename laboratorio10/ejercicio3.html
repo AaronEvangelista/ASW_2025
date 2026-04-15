@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<section id="padre">padre
+    <div id="hijo">hijo
+        <button id="button">boton </button>
+    </div>
+</section>
+
+<script>
+    const padre = document.getElementById('padre');
+    const hijo = document.getElementById('hijo');
+    const button = document.getElementById('button');
+
+    padre.addEventListener('click', () => {
+        console.log('Click al padre');
+    });
+
+    hijo.addEventListener('click', () => {
+        console.log('Click al hijo');
+    });
+
+    button.addEventListener('click', (e) => {
+        console.log('Click al boton');
+        e.stopPropagation();
+    });
+
+</script>
+
+</html>
