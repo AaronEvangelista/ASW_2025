@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 13</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form id="formularioInscripcion">
+        <fieldset>
+            <legend>Datos Personales</legend>
+
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required pattern="^[A-ZÁÉÍÓÚÑ][a-zA-ZáéíóúñÁÉÍÓÚÑ\s]*$">
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" placeholder="Contraseña" required>
+
+            <label for="lenguaje">Lenguaje favorito:</label>
+            <select id="lenguaje" name="lenguaje" required>
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="HTML">HTML</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Python">Python</option>
+            </select>
+
+            <label for="motivacion">Motivación para inscribirte:</label>
+            <textarea id="motivacion" name="motivacion" rows="4" maxlength="300"
+                placeholder="Cual es tu motivación para inscribirte?"></textarea>
+            <span id="contador" class="contador-texto">0 / 300</span>
+
+            <button type="submit" id="btnEnviar">Enviar Inscripción</button>
+        </fieldset>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
